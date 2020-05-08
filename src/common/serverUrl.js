@@ -1,0 +1,1 @@
+export const cloud_function_server_url = 'https://us-central1-grabcab-461b2.cloudfunctions.net/';

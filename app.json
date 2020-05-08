@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "GrabCab",
+    "description": "Taxi Booking App",
+    "slug": "GrabCab",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "notification": {
+      "icon": "./assets/images/push_notification.png"
+    },
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/appIcon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "usesAppleSignIn":true,
+      "bundleIdentifier": "com.martin.grabcab",
+      "infoPlist": {
+        "NSLocationAlwaysUsageDescription": "This app uses the location to find the Cabs near you.",
+        "NSLocationWhenInUseUsageDescription": "This app uses the location to find the Cabs near you.",
+        "NSCameraUsageDescription": "This app uses the camera to take your profile picture.",
+        "NSPhotoLibraryUsageDescription": "This app uses Photo Library for uploading your profile picture.",
+        "UIBackgroundModes": [
+        "location",
+        "fetch"
+        ]
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyAOKNhcEdgpe52HlE09p4MWGKbyXyWS2jw"
+      }
+    },
+    "android": {
+      "package": "com.martin.grabcab",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA_ROLL"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAOKNhcEdgpe52HlE09p4MWGKbyXyWS2jw"
+        }
+      }
+    },
+    "facebookScheme": "fb870057920147322",
+    "facebookAppId": "870057920147322",
+    "facebookDisplayName": "GrabCab"
+  }
+}
