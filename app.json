@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "GrabCab",
+    "name": "SeguTaxi",
     "description": "Taxi Booking App",
-    "slug": "GrabCab",
+    "slug": "SeguTaxi",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -29,7 +29,7 @@
     "ios": {
       "supportsTablet": true,
       "usesAppleSignIn":true,
-      "bundleIdentifier": "com.martin.grabcab",
+      "bundleIdentifier": "com.segutaxirider.app",
       "infoPlist": {
         "NSLocationAlwaysUsageDescription": "This app uses the location to find the Cabs near you.",
         "NSLocationWhenInUseUsageDescription": "This app uses the location to find the Cabs near you.",
@@ -45,7 +45,7 @@
       }
     },
     "android": {
-      "package": "com.martin.grabcab",
+      "package": "com.segutaxirider.app",
       "permissions": [
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
@@ -61,8 +61,8 @@
         }
       }
     },
-    "facebookScheme": "fb870057920147322",
-    "facebookAppId": "870057920147322",
-    "facebookDisplayName": "GrabCab"
+    "facebookScheme": "fb1193274324347796",
+    "facebookAppId": "1193274324347796",
+    "facebookDisplayName": "Taxi app"
   }
 }

@@ -73,7 +73,7 @@ export default class LoginScreen extends Component {
   async FbLogin() {
 
     try {
-      await Facebook.initializeAsync('870057920147322');
+      await Facebook.initializeAsync('1193274324347796');
       const {
         type,
         token
