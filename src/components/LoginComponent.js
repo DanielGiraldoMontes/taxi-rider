@@ -10,6 +10,7 @@ import {  colors } from '../common/theme';
 import { loginPage } from '../common/key';
 var { width } = Dimensions.get('window');
 import  languageJSON  from '../common/language';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export default class LoginComponent extends Component {
     constructor(props){
@@ -237,7 +238,8 @@ const styles = StyleSheet.create({
     forgotTitleStyle: { 
         fontWeight: "700",
         fontSize: 12,
-        width:"100%"
+        width:"100%",
+        color: "#000000"
     },
     buttonContainerStyle: {
         flex: 1

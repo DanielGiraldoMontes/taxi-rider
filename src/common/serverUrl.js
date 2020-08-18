@@ -1,1 +1,1 @@
-export const cloud_function_server_url = 'https://us-central1-react-taxi-app.cloudfunctions.net/';
+export const cloud_function_server_url = 'https://us-central1-tapup-4f27f.cloudfunctions.net/';

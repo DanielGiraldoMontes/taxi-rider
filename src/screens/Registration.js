@@ -30,14 +30,17 @@ export default class RegistrationPage extends React.Component {
           createdAt:new Date().toISOString()
           
         }  
+        firebase.auth().signOut();
         //console.log(firebase.auth().currentUser)
                // console.log("registration data===>",regData)
                 //  Registration part
                 if(firebase.auth().currentUser){
+                  console.log("registration data===>",regData)
                   //console.log(firebase.auth().currentUser)
                           var credential = firebase.auth.EmailAuthProvider.credential(email, password);
                           firebase.auth().currentUser.linkWithCredential(credential).then((usercred)=> {
                             var user = usercred.user;
+                            console.log("user: " + user);
                           if(user){
                             firebase.auth().currentUser.updateProfile({
                             displayName:regData.firstName + ' '+ regData.lastName,
@@ -51,10 +54,12 @@ export default class RegistrationPage extends React.Component {
                                   alert(res.message);
                                 })
                             })
+                          }).catch(res => {
+                            console.log(res.message);
                           });
                           }
                           }).catch(error=>{
-                            alert(languageJSON.Account_linking_error, error);
+                            alert(error.message + languageJSON.Account_linking_error, error);
                   });
                 }else{
                     firebase.auth().createUserWithEmailAndPassword(email,password).then((newUser)=>{
@@ -72,6 +77,8 @@ export default class RegistrationPage extends React.Component {
                                 alert(res.message);
                               })
                           })
+                        }).catch(res=>{
+                          console.log(res.message);
                         });
                       }
                     }).catch((error)=>{

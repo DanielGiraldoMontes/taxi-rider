@@ -173,28 +173,7 @@ export default class LoginScreen extends Component {
 
         </View>
 
-        <View style={styles.facebookButtonStyle}>
-          <Button
-            title={languageJSON.facebook_login_button}
-            loading={false}
-            titleStyle={styles.fbButtonTitleStyle}
-            loadingProps={{ size: "large", color: colors.BLUE.default.primary }}
-            buttonStyle={styles.fbLoginButtonStyle}
-            containerStyle={styles.fbLoginButtonContainer}
-            onPress={() => { this.FbLogin() }}
-          />
-        </View>
-        {Platform.OS == 'ios' ?
-          <View style={styles.facebookButtonStyle2}>
-            <AppleAuthentication.AppleAuthenticationButton
-              buttonType={AppleAuthentication.AppleAuthenticationButtonType.SIGN_IN}
-              buttonStyle={AppleAuthentication.AppleAuthenticationButtonStyle.BLACK}
-              cornerRadius={5}
-              style={{ width: 200, height: 44, elevation: 5,shadowColor: colors.BLACK,shadowRadius: 10,shadowOpacity: 0.6,hadowOffset: { width: 0, height: 4 } }}
-              onPress={() => { this.appleSigin() }}
-            />
-          </View>
-           : null} 
+
         <ForgotPassModal
           modalvisable={this.state.showForgotModal}
           requestmodalclose={() => { this.closeModal() }}

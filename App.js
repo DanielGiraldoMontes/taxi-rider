@@ -8,13 +8,13 @@ import AppContainer from './src/navigation/AppNavigator';
 import * as firebase from 'firebase'
 
 var firebaseConfig = {
-  apiKey: "AIzaSyAHh4y-innEI5xz0gm0kfLkoy2tSLM-t7g",
-  authDomain: "react-taxi-app.firebaseapp.com",
-  databaseURL: "https://react-taxi-app.firebaseio.com",
-  projectId: "react-taxi-app",
-  storageBucket: "react-taxi-app.appspot.com",
-  messagingSenderId: "617242834405",
-  appId: "1:617242834405:web:4c5948ab5c8a51982b6b0c"
+  apiKey: "AIzaSyBk-pjWkEYPmB25KJ_7CYY7UXXBCnN3aXk",
+  authDomain: "taxi-latino-bba00.firebaseapp.com",
+  databaseURL: "https://taxi-latino-bba00.firebaseio.com",
+  projectId: "taxi-latino-bba00",
+  storageBucket: "taxi-latino-bba00.appspot.com",
+  messagingSenderId: "934256288509",
+  appId: "1:934256288509:web:8cc0030610d9acb5449494"
 };
 
 // Initialize Firebase

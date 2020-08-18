@@ -118,6 +118,8 @@ export default class Registration extends React.Component {
 
     //register button press for validation
     onPressRegister(){
+        const ADMIN_USER = 'globalsolutionstaxi@gmail.com';
+        const ADMIN_PASSWORD = 'U3/uE0xT9!*_';
         const { onPressRegister } = this.props;
         LayoutAnimation.easeInEaseOut();
         const fnameValid = this.validateFirstName();
@@ -131,6 +133,7 @@ export default class Registration extends React.Component {
            
            if(this.state.refferalId != ''){
               this.setState({loadingModal:true})
+              //firebase.auth().signInWithEmailAndPassword(ADMIN_USER, ADMIN_PASSWORD);
                const userRoot=firebase.database().ref('users/');
                userRoot.once('value',userData=>{
                    if(userData.val()){
@@ -159,6 +162,8 @@ export default class Registration extends React.Component {
                            this.setState({reffralIdValid :false,loadingModal:false});
                        }
                    }
+                }).catch(response =>{
+                    console.log(response.message);
                 })
     
            }else{

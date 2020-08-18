@@ -3,7 +3,7 @@ export function farehelper(distance,time,rateDetails){
     let ratePerHour = rateDetails.rate_per_hour;
     let ratePerSecond = ratePerHour/3600;
     let minFare =  rateDetails.min_fare;
-    let DistanceInKM = parseFloat(distance/1000).toFixed(2);
+    let DistanceInKM = parseFloat(distance/1609).toFixed(2);
     let estimateRateForKM =parseFloat(DistanceInKM*ratePerKm).toFixed(2)*1;
     let estimateRateForhour = parseFloat(time*ratePerSecond).toFixed(2);
     let total = (parseFloat(estimateRateForKM)+parseFloat(estimateRateForhour))>minFare?(parseFloat(estimateRateForKM)+parseFloat(estimateRateForhour)):minFare;

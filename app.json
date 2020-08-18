@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "SeguTaxi",
+    "name": "TaxiLatino",
     "description": "Taxi Booking App",
-    "slug": "SeguTaxi",
+    "slug": "TaxiLatino",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -29,7 +29,7 @@
     "ios": {
       "supportsTablet": true,
       "usesAppleSignIn":true,
-      "bundleIdentifier": "com.segutaxirider.app",
+      "bundleIdentifier": "com.taxi.latino",
       "infoPlist": {
         "NSLocationAlwaysUsageDescription": "This app uses the location to find the Cabs near you.",
         "NSLocationWhenInUseUsageDescription": "This app uses the location to find the Cabs near you.",
@@ -41,11 +41,11 @@
         ]
       },
       "config": {
-        "googleMapsApiKey": "AIzaSyAOKNhcEdgpe52HlE09p4MWGKbyXyWS2jw"
+        "googleMapsApiKey": "AIzaSyB0f-vMOc-sHJQ2luxHG0yINWYTMN5kw8g"
       }
     },
     "android": {
-      "package": "com.segutaxirider.app",
+      "package": "com.taxi.latino",
       "permissions": [
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
@@ -57,7 +57,7 @@
       ],
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyAOKNhcEdgpe52HlE09p4MWGKbyXyWS2jw"
+          "apiKey": "AIzaSyB0f-vMOc-sHJQ2luxHG0yINWYTMN5kw8g"
         }
       }
     },
